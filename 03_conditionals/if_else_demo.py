@@ -5,11 +5,22 @@ marks = int(input("Enter your marks: "))
 # Example of the number line I used in my head:
 # -infinity, 0, 50, 70, 100, +infinity
 
+# The below code uses ONE if-elif-else block
+# if marks > 100 or marks < 0:
+#     print("Invalid Marks!")
+# elif marks >= 70:
+#     print("Distinction!")
+# elif marks >= 50:
+#     print("Pass!")
+# else:
+#     print("Fail!")
+
+# The below code uses 4 separate if blocks
 if marks > 100 or marks < 0:
     print("Invalid Marks!")
-elif marks >= 70:
+if marks >= 70:
     print("Distinction!")
-elif marks >= 50:
+if marks >= 50:
     print("Pass!")
-else:
+if marks >= 0:
     print("Fail!")
