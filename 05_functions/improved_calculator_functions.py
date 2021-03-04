@@ -1,4 +1,4 @@
-while True:
+def display_menu():
     print("""
     Menu:
     add: Addition
@@ -7,6 +7,15 @@ while True:
     divide: Division
     quit: Quit the program
     """)
+
+
+def add(first_number, second_number):
+    addition_result = first_number + second_number
+    print("Addition Result: " + str(addition_result))
+
+
+while True:
+    display_menu()
     chosen_operation = input("Enter a operation from the above menu: ")
 
     if chosen_operation == "quit":
@@ -25,8 +34,7 @@ while True:
     print("Your second number is:", number2, "and the type is", type(number1))
 
     if chosen_operation == "add":
-        addition_result = number1 + number2
-        print("Addition Result: " + str(addition_result))
+        add(number1, number2)
         continue
     if chosen_operation == "subtract":
         subtraction_result = number1 - number2
