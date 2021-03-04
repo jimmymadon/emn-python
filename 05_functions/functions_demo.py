@@ -70,3 +70,28 @@ print(personal_greeting_with_return("Mayla"))
 # OUTPUT = RETURN
 # USING a function = 'CALLING' a function
 # When CALLING a function, the VALUE of a PARAMETER = "ARGUMENT"
+
+
+# Example of a function with arbitrary ARGUMENTS
+# In this example, balances is an automatic list which will contain
+# items that are passed as arguments
+def display_balances_args(*balances, account_name):
+    for balance in balances:
+        print(balance)
+
+
+display_balances_args(12, 34, 33, 67, 56, account_name="Jimmy Madon")
+
+
+# Example of a function with a simple list argument
+# In this example, balances is an automatic list which will contain
+# items that are passed as arguments
+def display_balances_list(balances, account_name, security_password, welcome_message="Hello user"):
+    print(account_name)
+    print(security_password)
+    for balance in balances:
+        print(balance)
+
+
+balances_list = [12, 34, 33, 67, 56]
+display_balances_list(balances_list, "J1mmy", "Jimmy Madon", "Hello Jimmy")
