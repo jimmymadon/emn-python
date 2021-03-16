@@ -29,8 +29,8 @@ print()
 
 
 car_passing_table = {
-    'cars': ["BMW", "Volvo", "Ford"],
-    'passings': [3, 7, 2]
+    'cars': ["BMW", "Volvo", "Ford", "Lamborghini"],
+    'passings': [3, 7, 2, 5]
 }
 
 # Example of accessing the cars_passing_table dictionary
